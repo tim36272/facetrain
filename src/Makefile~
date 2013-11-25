@@ -6,7 +6,7 @@ facetrain: facetrain.o imagenet.o backprop_initr.o pgmimage.o
 	      -o facetrain -lm
 
 facetrain_pose: facetrain_pose.o imagenet.o backprop_initr.o pgmimage.o
-	$(CC) ${LFLAGS} facetrain_pose.o imagenet.o backprop_initr.o pgmimage.o \
+	$(CC) ${LFLAGS} facetrain.o imagenet.o backprop_initr.o pgmimage.o \
 	      -o facetrain_pose -lm
 
 hidtopgm: hidtopgm.o pgmimage.o backprop_initr.o

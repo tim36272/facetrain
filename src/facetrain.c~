@@ -98,9 +98,7 @@ char *argv[];
   /*** Show number of images in train, test1, test2 ***/
   printf("%d images in training set\n", trainlist->n);
   printf("%d images in test1 set\n", test1list->n);
-  printf("%d images in test2 set\n", test2list->n);
-  
-
+  printf("%d images in test2 set\n", test2list->
 
   /*** If we've got at least one image to train on, go train the net ***/
   backprop_face(trainlist, test1list, test2list, epochs, savedelta, netname,
